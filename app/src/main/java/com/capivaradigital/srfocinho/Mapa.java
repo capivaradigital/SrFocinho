@@ -5,6 +5,8 @@ import android.location.Location;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
+import android.widget.TextView;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -15,16 +17,24 @@ import com.google.android.gms.location.LocationServices;
 
 public class Mapa extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, LocationListener {
 
-
+    private final String LOG_TAG = "TestApp";
     private GoogleApiClient mGoogleApiClient;
     private LocationRequest mLocationRequest;
 
+    TextView longi;
+    TextView latit;
 
+    double tm;
+    double tm1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mapa);
+
+        longi =(TextView) findViewById(R.id.longi);
+        latit =(TextView) findViewById(R.id.latu);
+
     }
 
     @Override
@@ -44,6 +54,12 @@ public class Mapa extends AppCompatActivity implements GoogleApiClient.Connectio
 
     @Override
     public void onLocationChanged(Location location) {
+
+        Log.i(LOG_TAG, location.toString());
+        //txtOutput.setText(location.toString());
+
+        tm = location.getLatitude();
+        tm1 = location.getLongitude();
 
     }
 
