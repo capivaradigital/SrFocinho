@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "938926465807",
+    "firebase_url": "https://srfocinho-b57dc.firebaseio.com",
+    "project_id": "srfocinho-b57dc",
+    "storage_bucket": "srfocinho-b57dc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:938926465807:android:18db41ff1094512a",
+        "android_client_info": {
+          "package_name": "com.capivaradigital.srfocinho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "938926465807-v56ll53s0thspmvfjkis9evb24ld09l9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.capivaradigital.srfocinho",
+            "certificate_hash": "cdf51730c654940f4e0152a3f7340a11acb4977c"
+          }
+        },
+        {
+          "client_id": "938926465807-ffc8jqqqf8s6n2dtpmtfivnvghqn1pdo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBAgXW7NHMLjBiGgtfIBYLy8-oZR9wk0iM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "938926465807-ffc8jqqqf8s6n2dtpmtfivnvghqn1pdo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
